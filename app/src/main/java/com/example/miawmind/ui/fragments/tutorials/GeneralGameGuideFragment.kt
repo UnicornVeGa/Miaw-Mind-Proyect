@@ -22,25 +22,27 @@ class GeneralGameGuideFragment : DialogFragment() {
     private var currentPage = 0
     private val totalPages = 5
 
-    private val descriptions = listOf(
-        getString(R.string.step1),
-        getString(R.string.step2),
-        getString(R.string.step3),
-        getString(R.string.step4),
-        getString(R.string.step5)
-    )
+    private lateinit var descriptions: List<String>
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentGeneralGameGuideBinding.inflate(inflater, container, false)
+        _binding = FragmentGeneralGameGuideBinding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        descriptions = listOf(
+            getString(R.string.step1),
+            getString(R.string.step2),
+            getString(R.string.step3),
+            getString(R.string.step4),
+            getString(R.string.step5)
+        )
 
         setupDots()
         updatePage()

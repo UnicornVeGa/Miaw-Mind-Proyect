@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">Miaw Mind</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cat_name_example">Michi Name</string>
+    <string name="cat_message_example">Ejemplo de mensje de gatito. Lorem ipsum dolor sit amet consectetur adipiscing, elit nunc mauris integer dictumst porta.</string>
+    <string name="game_guide_title">Guía del juego</string>
+    <string name="example_step_description">Ejemplo de descrippción. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam elit, sollicitudin eu pharetra eget, varius sit amet.</string>
+    <string name="btn_done_string">¡Listo!</string>
+    <string name="step1">Paso 1: Aprende los controles básicos para moverte dentro del juego.</string>
+    <string name="step2">Paso 2: Cuida a tus gatitos, ellos te dirán lo que necesitan. Puedes ver su estado en el panel.</string>
+    <string name="step3">Paso 3: Obtén monedas jugando minijuegos de destreza mental. Usa tus habilidades sabiamente.</string>
+    <string name="step4">Paso 4: Compra nuevos items en \"La Tiendita\" para cuidar a tus gatitos.</string>
+    <string name="step5">Paso 5: Ve tus estadísticas personalizadas de desempeño en tu perfil.</string>
+    <string name="title_menu_games">¿Qué quieres jugar hoy?</string>
+    <string name="example_number_coins">1000</string>
+    <string name="example_game_name">Nombre del juego</string>
+    <string name="game_description_example">Ejemplo de descripción de juego. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam elit, sollicitudin eu pharetra eget, varius sit amet.</string>
+    <string name="best_score">Mejor puntaje</string>
+    <string name="example_best_score">100 pts</string>
+    <string name="record_time">Mejor tiempo</string>
+    <string name="example_record_time">1:30 min</string>
+    <string name="btn_start_game_message">¡Comenzar juego!</string>
+    <string name="show_help">Mostrar ayuda</string>
+    <string name="game_screen_message">Pantalla de desarrollo del juego</string>
+    <string name="btn_go_end_game_message">Ir a Fin de juego</string>
+    <string name="game_pause">Pausar juego</string>
+    <string name="feedback_message">¡Lo hiciste muy bien!</string>
+    <string name="earned_points">Puntos obtenidos</string>
+    <string name="earned_points_example">100 pts</string>
+    <string name="game_duration">Duración de la partida</string>
+    <string name="game_duration_example">1:30 min</string>
+    <string name="earned_coins">Monedas ganadas</string>
+    <string name="earned_coins_example">30</string>
+    <string name="play_again">¡Volver a jugar!</string>
+    <string name="exit">Salir</string>
+    <string name="store_title">La tiendita</string>
+    <string name="all">Todos</string>
+    <string name="product_name">Nombre producto</string>
+    <string name="product_description_example">Ejemplo descripción producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam elit, sollicitudin eu pharetra eget, varius sit amet.</string>
+    <string name="price_example">$ 100</string>
+    <string name="min_number_products">1</string>
+    <string name="btn_purchase">Comprar</string>
+    <string name="product_price">$ %1$d</string>
+    <string name="increment_price">$ %1$d</string>
+    <string name="confirmation_title">Confirma por favor</string>
+    <string name="confirmation_message">¿Estás seguro que deseas comprar el producto?</string>
+    <string name="accept">Aceptar</string>
+    <string name="checkout_message">Compra realizada</string>
+    <string name="cancel">Cancelar</string>
+    <string name="name">Nombre</string>
+    <string name="example_email">Correo de tu cuenta: \n correo_ejemplo@gmail.com</string>
+    <string name="statistics_title">Estadísticas de juego</string>
+    <string name="total_time_played_example">Tiempo total jugado: 30 min</string>
+    <string name="name_example">Nombre</string>
+    <string name="game_1_name_recuerdameaw">¡Recuérdameaw!</string>
+    <string name="game_2_name_miaw_miau">Miaw miau</string>
+    <string name="game_3_name_cuenta_gatitos">Cuenta gatitos</string>
+    <string name="game_4_name_atrapa_el_raton">¡Atrapa el ratón!</string>
+    <string name="game_5_name_memoramiaw">Memoramiaw</string>
+    <string name="configuration">Configuración</string>
+    <string name="music">Música</string>
+    <string name="sound">Sonido</string>
+    <string name="save_progress">Guardar mi progreso</string>
+    <string name="guide">Ver guía del juego</string>
+    <string name="credits">Créditos</string>
+    <string name="my_kittens">Mis Gatitos</string>
+    <string name="games">Juegos</string>
+    <string name="store">Tiendita</string>
+    <string name="my_profile">Mi perfil</string>
+    <string name="high_score_example">Puntuación más alta: 0</string>
+    <string name="record_time_example">Mejor tiempo: 0s</string>
+    <string name="game_ability_example">Habilidad del juego</string>
+    <string name="best_time">Mejor tiempo: %1$s</string>
+    <string name="highest_score">Puntuación más alta: %1$d</string>
+
+    <!-- Categorías -->
+    <string name="category_cats">Gatitos</string>
+    <string name="category_food">Alimento</string>
+    <string name="category_toys">Juguetes</string>
+    <string name="category_health">Salud</string>
+    <string name="category_home">Hogar</string>
+
+    <!-- Gatitos -->
+    <string name="product_cat_brown_name">Gatito pardo</string>
+    <string name="product_cat_brown_desc">Un adorable gatito de pelaje marrón claro y ojos dulces.</string>
+    <string name="product_cat_persian_name">Gatito persa</string>
+    <string name="product_cat_persian_desc">Pelaje largo y esponjoso, ideal para quienes aman acariciar.</string>
+    <string name="product_cat_egyptian_name">Gatito egipcio</string>
+    <string name="product_cat_egyptian_desc">Elegante, con un aire misterioso y orejas puntiagudas.</string>
+    <string name="product_cat_orange_name">Gatito naranjoso</string>
+    <string name="product_cat_orange_desc">Cariñoso y juguetón, con un pelaje naranja vibrante.</string>
+    <string name="product_cat_black_name">Gatito negro</string>
+    <string name="product_cat_black_desc">Misterioso pero leal, perfecto para noches de ternura.</string>
+    <string name="product_cat_siamese_name">Gatito siamés</string>
+    <string name="product_cat_siamese_desc">Inteligente y comunicativo, con ojos azules brillantes.</string>
+
+    <!-- Alimento -->
+    <string name="product_food_kibble_name">Croquetas</string>
+    <string name="product_food_kibble_desc">Alimento balanceado para mantener saludable a tu gatito.</string>
+    <string name="product_food_premium_name">Croquetas premium</string>
+    <string name="product_food_premium_desc">Receta de alta calidad con ingredientes seleccionados.</string>
+    <string name="product_food_salmon_name">Salmón</string>
+    <string name="product_food_salmon_desc">Un premio delicioso y nutritivo para consentirlo.</string>
+    <string name="product_food_catnip_name">Catnip</string>
+    <string name="product_food_catnip_desc">Hierba que estimula y alegra a tu gatito.</string>
+    <string name="product_food_churu_name">Churus</string>
+    <string name="product_food_churu_desc">Snack cremoso que fortalece el vínculo con tu mascota.</string>
+
+    <!-- Juguetes -->
+    <string name="product_toy_mouse_name">Ratón</string>
+    <string name="product_toy_mouse_desc">Juguete clásico para despertar su instinto cazador.</string>
+    <string name="product_toy_ball_name">Pelota</string>
+    <string name="product_toy_ball_desc">Pelota ligera para horas de diversión.</string>
+    <string name="product_toy_scratcher_name">Rascador</string>
+    <string name="product_toy_scratcher_desc">Accesorio esencial para cuidar sus uñas y tu sofá.</string>
+    <string name="product_toy_feather_name">Caña con plumas</string>
+    <string name="product_toy_feather_desc">Perfecta para jugar y ejercitar a tu gatito.</string>
+
+    <!-- Salud -->
+    <string name="product_health_vaccine_name">Vacuna</string>
+    <string name="product_health_vaccine_desc">Protege la salud de tu gatito contra enfermedades.</string>
+    <string name="product_health_med_name">Medicina</string>
+    <string name="product_health_med_desc">Tratamiento especial para cuando tu gatito no se sienta bien.</string>
+    <string name="product_health_shampoo_name">Shampoo</string>
+    <string name="product_health_shampoo_desc">Suave y seguro para mantener su pelaje limpio y brillante.</string>
+    <string name="product_health_perfume_name">Perfume</string>
+    <string name="product_health_perfume_desc">Fragancia ligera para que siempre huela fresco.</string>
+    <string name="product_health_brush_name">Cepillo</string>
+    <string name="product_health_brush_desc">Mantén su pelaje desenredado y sin bolas de pelo.</string>
+
+    <!-- Hogar -->
+    <string name="product_home_bed_name">Cama</string>
+    <string name="product_home_bed_desc">Cómoda y acolchada para que tu gatito descanse.</string>
+    <string name="product_home_plate_name">Plato</string>
+    <string name="product_home_plate_desc">De cerámica con diseño elegante y fácil de limpiar.</string>
+    <string name="product_home_house_name">Casa</string>
+    <string name="product_home_house_desc">Un espacio propio para que juegue y se esconda.</string>
+    <string name="product_home_plant_name">Planta</string>
+    <string name="product_home_plant_desc">Decoración amigable y segura para gatitos.</string>
+    <string name="product_home_wallpaper_name">Wallpaper</string>
+    <string name="product_home_wallpaper_desc">Personaliza el espacio virtual con fondos únicos.</string>
+
+    <!-- Juegos -->
+    <string name="game_memory_name">¡Recuérdameaw!</string>
+    <string name="game_memory_type">Memoria visual</string>
+    <string name="game_memory_desc">Observa un gatito con un patrón de pelaje, colores y accesorios. Tienes 5 segundos para memorizarlo. Después, deberás identificarlo entre varias opciones.</string>
+
+    <string name="game_music_name">Miaw miau</string>
+    <string name="game_music_type">Memoria musical</string>
+    <string name="game_music_desc">Escucha la secuencia de sonidos y repítela tocando a los gatitos en el orden correcto.</string>
+
+    <string name="game_math_name">Cuenta gatitos</string>
+    <string name="game_math_type">Cálculo mental</string>
+    <string name="game_math_desc">Mira la secuencia de gatitos de colores: cada color vale un número distinto. Calcula el total antes de que se acabe el tiempo y demuestra tu agilidad mental.</string>
+
+    <string name="game_reflex_name">¡Atrapa el ratón!</string>
+    <string name="game_reflex_type">Reflejos</string>
+    <string name="game_reflex_desc">Los ratones corren por la pantalla y tú debes atraparlos antes de que invadan la casa de tus gatitos.</string>
+
+    <string name="game_pairs_name">Memoramiaw</string>
+    <string name="game_pairs_type">Memoria</string>
+    <string name="game_pairs_desc">Encuentra las parejas de gatitos, pero cuidado: algunos distractores cambiarán las posiciones de las tarjetas cuando menos lo esperes.</string>
+
+</resources>

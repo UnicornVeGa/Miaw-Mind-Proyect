@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.settings.SettingsFragment"
+    android:background="#80000000">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainCard"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:padding="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_gear"
+                    android:layout_marginEnd="10dp"
+                    app:tint="@color/symbol_gray" />
+
+                <TextView
+                    android:id="@+id/tvSettingsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/configuration"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_gear"
+                    android:layout_marginStart="10dp"
+                    app:tint="@color/symbol_gray" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_music_note"
+                    android:layout_marginEnd="10dp"
+                    app:tint="@color/symbol_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchMusic"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_sound"
+                    android:layout_marginEnd="10dp"
+                    app:tint="@color/symbol_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sound"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guide"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/symbol_gray"
+                    android:drawableLeft="@drawable/ic_help"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="30dp"
+                    android:textAlignment="viewStart"/>
+
+                <Button
+                    android:id="@+id/btnCredits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/credits"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/symbol_gray"
+                    android:drawableLeft="@drawable/ic_bookmark_heart"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="30dp"
+                    android:textAlignment="viewStart"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>

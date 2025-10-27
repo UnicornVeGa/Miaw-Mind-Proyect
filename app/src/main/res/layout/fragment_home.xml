@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_name_example"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_upsidedown_background"
+            android:padding="20dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/hudCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/rounded_tv_element_background"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/tvCatName">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cat_happiness"
+                    android:layout_marginEnd="13dp"/>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressHappiness"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    app:trackColor="@color/symbol_gray"
+                    app:indicatorColor="@color/black"
+                    android:progress="70"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cat_energy"
+                    android:layout_marginEnd="12dp"/>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressEnergy"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    app:trackColor="@color/symbol_gray"
+                    app:indicatorColor="@color/black"
+                    android:progress="50"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cat_health"
+                    android:layout_marginEnd="12dp"/>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressHealth"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    app:trackColor="@color/symbol_gray"
+                    app:indicatorColor="@color/black"
+                    android:progress="90"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_kawaii_cat"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvCatMessage"
+            app:layout_constraintTop_toBottomOf="@+id/hudCat"/>
+
+        <TextView
+            android:id="@+id/tvCatMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="30dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_tv_element_background"
+            android:text="@string/cat_message_example"
+            app:layout_constraintBottom_toTopOf="@+id/layoutInventoryButtons"/>
+
+        <LinearLayout
+            android:id="@+id/layoutInventoryButtons"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/layoutCarousel">
+
+            <ImageButton
+                android:id="@+id/btnFood"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_fish"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/inventory_rounded_button_background"/>
+            <ImageButton
+                android:id="@+id/btnToys"
+                android:layout_width="70dp"
+                android:paddingTop="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_ball"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/rounded_background"/>
+            <ImageButton
+                android:id="@+id/btnHealth"
+                android:layout_width="70dp"
+                android:paddingTop="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_health"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/rounded_background"/>
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="70dp"
+                android:paddingTop="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_furniture"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/rounded_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCarousel"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCarousel"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:background="@color/baby_pink"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

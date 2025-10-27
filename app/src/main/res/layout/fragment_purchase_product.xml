@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.store.PurchaseProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_missing_image"
+            app:riv_corner_radius="15dp"
+            app:riv_border_width="0dp"
+            app:riv_mutate_background="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:riv_oval="false"
+            android:background="@color/basic_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ivProductImage"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvProductDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductName"
+            android:text="@string/product_description_example"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_example"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductDescription"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="25dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductPrice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rounded_background"/>
+
+        <LinearLayout
+            android:id="@+id/layoutCountProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="38dp">
+            <ImageButton
+                android:id="@+id/btnSubtract"
+                android:background="@color/basic_gray"
+                android:src="@drawable/ic_subtract_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/tvProductCount"
+                android:layout_width="60dp"
+                android:layout_height="28dp"
+                android:text="@string/min_number_products"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_et_element_background"
+                android:editable="false"
+                android:layout_marginHorizontal="10dp"
+                android:textStyle=""/>
+            <ImageButton
+                android:id="@+id/btnAdd"
+                android:background="@color/basic_gray"
+                android:src="@drawable/ic_add_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPurchase"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCountProducts"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_purchase"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/symbol_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            app:layout_constraintTop_toBottomOf="@id/btnPurchase"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.miawmind.ui.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_generalGameGuideFragment"
+            app:destination="@id/generalGameGuideFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenuGamesFragment"
+        android:name="com.example.miawmind.ui.fragments.games.MainMenuGamesFragment"
+        android:label="fragment_main_menu_games"
+        tools:layout="@layout/fragment_main_menu_games" >
+        <action
+            android:id="@+id/action_mainMenuGamesFragment_to_startGameFragment"
+            app:destination="@id/startGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenuStoreFragment"
+        android:name="com.example.miawmind.ui.fragments.store.MainMenuStoreFragment"
+        android:label="fragment_main_menu_store"
+        tools:layout="@layout/fragment_main_menu_store" >
+        <action
+            android:id="@+id/action_mainMenuStoreFragment_to_purchaseProductFragment"
+            app:destination="@id/purchaseProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenuProfileFragment"
+        android:name="com.example.miawmind.ui.fragments.profile.MainMenuProfileFragment"
+        android:label="fragment_main_menu_profile"
+        tools:layout="@layout/fragment_main_menu_profile" >
+        <action
+            android:id="@+id/action_mainMenuProfileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startGameFragment"
+        android:name="com.example.miawmind.ui.fragments.games.StartGameFragment"
+        android:label=""
+        tools:layout="@layout/fragment_start_game" >
+        <action
+            android:id="@+id/action_startGameFragment_to_gamePlayFragment"
+            app:destination="@id/gamePlayFragment" />
+        <argument
+            android:name="selectedGame"
+            app:argType="com.example.miawmind.model.Game" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePlayFragment"
+        android:name="com.example.miawmind.ui.fragments.games.GamePlayFragment"
+        android:label="fragment_game_play"
+        tools:layout="@layout/fragment_game_play" >
+        <action
+            android:id="@+id/action_gamePlayFragment_to_endGameFragment"
+            app:destination="@id/endGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endGameFragment"
+        android:name="com.example.miawmind.ui.fragments.games.EndGameFragment"
+        android:label="fragment_end_game"
+        tools:layout="@layout/fragment_end_game" >
+        <action
+            android:id="@+id/action_endGameFragment_to_gamePlayFragment"
+            app:destination="@id/gamePlayFragment" />
+        <action
+            android:id="@+id/action_endGameFragment_to_mainMenuGamesFragment"
+            app:destination="@id/mainMenuGamesFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/purchaseProductFragment"
+        android:name="com.example.miawmind.ui.fragments.store.PurchaseProductFragment"
+        android:label="fragment_purchase_product"
+        tools:layout="@layout/fragment_purchase_product" >
+        <argument
+            android:name="selectedProduct"
+            app:argType="com.example.miawmind.model.Product" />
+    </dialog>
+    <dialog
+        android:id="@+id/generalGameGuideFragment"
+        android:name="com.example.miawmind.ui.fragments.tutorials.GeneralGameGuideFragment"
+        android:label="fragment_general_game_guide"
+        tools:layout="@layout/fragment_general_game_guide" />
+
+    <action
+        android:id="@+id/action_global_to_mainMenuGamesFragment"
+        app:destination="@id/mainMenuGamesFragment"
+        app:popUpTo="@id/mainMenuGamesFragment"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_global_to_mainMenuStoreFragment"
+        app:destination="@id/mainMenuStoreFragment"
+        app:popUpTo="@id/mainMenuStoreFragment"
+        app:popUpToInclusive="true" />
+
+    <dialog
+        android:id="@+id/settingsFragment"
+        android:name="com.example.miawmind.ui.fragments.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_generalGameGuideFragment"
+            app:destination="@id/generalGameGuideFragment" />
+    </dialog>
+
+</navigation>
